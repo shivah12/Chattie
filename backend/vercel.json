@@ -14,5 +14,11 @@
       "src": "/(.*)",
       "dest": "/backend/frontend/$1"
     }
+  ],
+  "rewrites": [
+    { 
+      "source": "/(.*)", 
+      "destination": "/" 
+    }
   ]
 }
