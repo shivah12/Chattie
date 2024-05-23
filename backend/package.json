@@ -2,13 +2,10 @@
 	"name": "chattie",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
-	"engines":{
-		"node":"14.x"
-	},
+	"main": "server.js",
 	"scripts": {
-		"server": "node backend/index.js",
-		"start": "node backend/index.js",
+		"server": "nodemon backend/server.js",
+		"start": "node backend/server.js",
 		"build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
 	},
 	"type": "module",
