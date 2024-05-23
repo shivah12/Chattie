@@ -9,18 +9,18 @@
       }
     },
     {
-      "src": "backend/api/**",
+      "src": "backend/server.js",
       "use": "@vercel/node"
     }
   ],
-  "rewrites": [
+  "routes": [
     {
-      "source": "/api/(.*)",
-      "destination": "/backend/api/$1"
+      "src": "/api/(.*)",
+      "dest": "/backend/server.js"
     },
     {
-      "source": "/(.*)",
-      "destination": "/backend/frontend/build/$1"
+      "src": "/(.*)",
+      "dest": "/backend/frontend/build/$1"
     }
   ]
 }
